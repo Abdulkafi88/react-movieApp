@@ -1,0 +1,30 @@
+{
+  "name": "react-movieApp",
+  "version": "1.0.0",
+  "description": "Description of your React Movie App",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --outDir=./dist",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "npm run build && copy src\\dist\\* .\\ /Y && gh-pages -d . -b gh-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdulkafi88/react-movieApp.git"
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.55.0",
+    "gh-pages": "^6.1.1",
+    "vite": "^5.0.8"
+  }
+}
